@@ -91,19 +91,25 @@ useQuerySelector(".banner__form").addEventListener("submit", (event) => {
     useQuerySelector(".banner__form-error-email").style.display = "none";
   }
 
+  const lengthNum =
+    useQuerySelector("#phone").value.trim().length < 12 ||
+    useQuerySelector("#phone").value.trim().length > 12;
+
   if (!useQuerySelector("#phone").value.trim()) {
     useQuerySelector(".banner__form-error-phone").innerHTML =
       "Це поле не може бути порожнім.";
     useQuerySelector(".banner__form-error-phone").style.display = "block";
-  } else if (
-    !useQuerySelector("#phone").value.trim() < 13 ||
-    !useQuerySelector("#phone").value.trim() > 13
-  ) {
+  } else if (lengthNum) {
     useQuerySelector(".banner__form-error-phone").innerHTML =
-      "Це поле не може бути порожнім.wewefe";
+      "Не віриний формат номеру";
     useQuerySelector(".banner__form-error-phone").style.display = "block";
+  } else {
+    useQuerySelector(".banner__form-error-phone").innerHTML = "";
+    useQuerySelector(".banner__form-error-phone").style.display = "none";
   }
 });
+
+console.log(useQuerySelector("#phone").value);
 
 function calcResult() {
   if (previousAmount !== null) {
@@ -162,7 +168,6 @@ $(".summa").ionRangeSlider({
 
 window.intlTelInput(useQuerySelector("#phone"), {
   initialCountry: "ua",
-  separateDialCode: true,
   useFullscreenPopup: false,
   utilsScript:
     "https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/utils.js",

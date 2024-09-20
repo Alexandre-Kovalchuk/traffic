@@ -1033,8 +1033,7 @@ h6 {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   padding: 29px;
   background: #fff;
-  min-height: 362px;
-  height: 100%;
+  min-height: 373px;
 }
 @media (max-width: 767px) {
   .card__item {
