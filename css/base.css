@@ -68,6 +68,10 @@
   font-style: normal;
   font-display: swap;
 }
+.lock {
+  overflow: hidden;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;

@@ -27,6 +27,7 @@ window.addEventListener("scroll", addScroll);
 useQuerySelector(".menu__icon").addEventListener("click", () => {
   useQuerySelector(".menu__icon").classList.toggle("menu__icon_active");
   useQuerySelector(".menu__body").classList.toggle("menu__body_active");
+  useQuerySelector("body").classList.toggle("lock");
 });
 
 // validation

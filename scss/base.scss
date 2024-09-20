@@ -1,6 +1,11 @@
 @import './fonts';
 @import './breakpoints';
 
+
+.lock{
+    overflow: hidden;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
