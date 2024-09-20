@@ -1,0 +1,36 @@
+@mixin hover-link {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    background-color: $red-100;
+  }
+
+  &:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+
+  &:hover {
+    color: $red-100;
+  }
+}
+
+@mixin hover-btn {
+  border: 2px solid $red-100;
+  transition: background-color .5s ease, color .5s ease;
+
+  &:hover {
+    background: $white-100;
+    border: 2px solid $red-100;
+    color: $red-100;
+  }
+}

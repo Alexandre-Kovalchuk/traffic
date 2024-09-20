@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- intl-tel-input -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Ion.RangeSlider -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Traffic</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <a href="#">
+              <picture>
+                <source srcset="./img/logo.webp" />
+                <img src="./img/logo.png" alt="logo" />
+              </picture>
+            </a>
+          </div>
+
+          <div class="header__menu menu">
+            <div class="menu__icon">
+              <span></span>
+            </div>
+
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">Informazioni</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">CEO</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Iniziare a guadagnare subito</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="banner">
+        <div class="banner__bg"></div>
+        <div class="container">
+          <div class="banner__content">
+
+            <h1 class="banner__title">
+              Investire 250 euro per raggiungere 5000 euro in una settimana vi sembra impossibile?
+              Con il Gruppo Generali potete fare ancora di più!
+            </h1>
+
+            <div class="banner__square"></div>
+
+            <div class="banner__item">
+              <div class="banner__image">
+                <picture>
+                  <source srcset="./img/banner.webp" />
+                  <img src="./img/banner.png" alt="logo" />
+                </picture>
+              </div>
+
+              <form class="banner__form">
+                <div class="banner__form-name">
+                  <input type="text" class="banner__inp " id="name" placeholder="il suo nome">
+                  <small class="banner__form-error-name "></small>
+                </div>
+
+                <div class="banner__form-surname">
+                  <input type="text" class="banner__inp" id="surname" placeholder="il suo cog">
+                  <small class="banner__form-error-surname"></small>
+                </div>
+
+                <div class="banner__form-email">
+                  <input type="text" class="banner__inp" id="email" placeholder="e-mail">
+                  <small class="banner__form-error-email"></small>
+                </div>
+
+                <div class="banner__form-phone">
+                  <input type="tel" class="banner__inp" id="phone">
+                  <small class="banner__form-error-phone"></small>
+                </div>
+                <button class="banner__btn" type="submit">registrati</button>
+              </form>
+            </div>
+          </div>
+      </section>
+
+      <section class="missions">
+        <div class="container">
+          <div class="missions__content">
+            <div class="missions__clip-paht">
+              <svg>
+                <use xlink:href="../img/sprite.svg#clip-path"></use>
+              </svg>
+            </div>
+
+            <div class="missions__column">
+              <h2 class="missions__title">IL NOSTRO SCOPO</h2>
+
+              <p class="missions__text">
+                Siamo qui per promuovere lo sviluppo e la circolazione delle persone, delle imprese e del Paese.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="launch">
+        <div class="container">
+          <div class="launch__content">
+            <h2 class="launch__title">Inizia a servire con noi</h2>
+
+            <div class="launch__row">
+              <!-- first card -->
+              <div class="launch__card">
+                <div class="launch__card-icon">
+                  <svg>
+                    <use xlink:href="../img/sprite.svg#person"></use>
+                  </svg>
+                </div>
+
+                <div class="launch__card-body">
+                  <h3 class="launch__card-title">Registrazione</h3>
+
+                  <p class="launch__card-text launch__card-text_middle">Compilare tutti i campi del modulo di
+                    registrazione sul sito web.</p>
+                </div>
+
+                <div>
+                  <button class="launch__card-btn">INIZIARE</button>
+                </div>
+              </div>
+
+              <!-- middle -->
+              <div class="launch__card launch__card_middle">
+                <div class="launch__card-icon">
+                  <svg>
+                    <use xlink:href="../img/sprite.svg#detective"></use>
+                  </svg>
+                </div>
+
+                <div class="launch__card-body">
+                  <h3 class="launch__card-title">Consultazione di esperti</h3>
+
+                  <p class="launch__card-text launch__card-text_middle">
+                    Dopo la registrazione, rispondere all'invito del Consulente di supporto di Petrol Energia e seguire
+                    tutte le sue istruzioni.
+                  </p>
+                </div>
+
+                <div>
+                  <button class="launch__card-btn">INIZIARE</button>
+                </div>
+              </div>
+
+              <!-- third card -->
+              <div class="launch__card">
+                <div class="launch__card-icon">
+                  <svg>
+                    <use xlink:href="../img/sprite.svg#tree"></use>
+                  </svg>
+                </div>
+
+                <div class="launch__card-body">
+                  <h3 class="launch__card-title">Registrazione</h3>
+
+                  <p class="launch__card-text launch__card-text_middle">
+                    Dopo la verifica, è necessario depositare un minimo di 250 euro sul conto dell'azionista.
+                  </p>
+                </div>
+
+                <div>
+                  <button class="launch__card-btn">INIZIARE</button>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="info">
+        <div class="container">
+          <div class="info__row">
+            <div class="info__portrait">
+              <picture>
+                <source srcset="./img/person.webp" />
+                <img src="./img/person.png" alt="logo" />
+              </picture>
+            </div>
+
+            <div class="info__description">
+              <div class="info__banner">
+                <picture>
+                  <source srcset="./img/info.webp" />
+                  <img src="./img/info.png" alt="logo" />
+                </picture>
+              </div>
+
+              <p class="info__text">
+                Philippe Donnet, amministratore delegato di Generali, ha appena festeggiato dieci anni in Italia e in
+                un’intervista a “Repubblica” spiega che bilancio trae dal nostro Paese: “In questi dieci anni il mondo
+                ha dovuto fare i conti con prove molto dure e questo ci ha resi più capaci di gestire l’imprevedibile.
+                L’Italia ha resistito bene. Per quanto mi riguarda, tre anni fa sono diventato cittadino italiano:
+                perché ci tenevo a rimarcare un’adesione forte ai valori e alla cultura di questo Paese”. Un’altra prova
+                per l’economia è stato il repentino rialzo dei tassi: “A mio parere è improprio parlare oggi di tassi
+                alti: quando ero teenager, i mutui viaggiavano a due cifre percentuali. La vera anomalia è stata vivere
+                con tassi a zero per quindici anni. Oggi siamo in una situazione normale. Per quel che riguarda il
+                nostro gruppo, abbiamo un business mix grazie al quale possiamo crescere in qualsiasi ciclo economico”.
+                La crescita dell’Italia è stimata attorno allo 0,7 per cento: “Noi non avremo problemi ma per la
+                crescita si può fare meglio, in Italia e in Europa. Ritengo che in Europa non ci sia abbastanza Europa,
+                ma troppe tasse e troppe norme, che si sovrappongono a quelle nazionali. Questo non aiuta né le famiglie
+                né le imprese: quindi abbassiamo le tasse, riduciamo le norme e liberiamo le energie imprenditoriali”.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="info__content">
+            <h2 class="info__title">Potencijal dobiti</h2>
+
+            <div class="info__item">
+              <div class="info__calculator">
+                <div class="info__month">
+                  <input type="text" class="month" name="my_range" value="" />
+                </div>
+
+                <div class="info__summa">
+                  <input type="text" class="summa" name="my_range" value="" />
+                </div>
+
+                <p class="info__result"> MOGUĆA DOBIT: <span class="info__result_sum"></span></p>
+
+              </div>
+
+              <div class="info__balance">
+                <p class="info__balance-text">UKUPNA DOBIT KORISNIKA:</p>
+
+                <p class="info__balance-sum">€ 128 567 000</p>
+
+                <p class="info__balance-text">AKTIVNI KORISNICI:</p>
+
+                <p class="info__balance-sum">77 335</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card__gradient"></div>
+        <div class="card__content">
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card__item">
+                  <div class="card__row">
+                    <div class="card__avatar">
+                      <picture>
+                        <source srcset="./img/card-1.webp" />
+                        <img src="./img/card-1.png" alt="Avatar" />
+                      </picture>
+                    </div>
+
+                    <div class="card__column">
+                      <p class="card__name">Jeff Bezos:</p>
+
+                      <p class="card__text">
+                        Technologieunternehmer, Investor und Philanthrop
+                      </p>
+
+                      <a href="#" class="card__social">
+                        <svg>
+                          <use xlink:href="../img/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__line"></div>
+
+                  <p class="card__about">
+                    Dem Quantencomputing gehört die Zukunft. Ich übertreibe nicht, wenn ich sage, es wird
+                    alles verändern wird. Das Quantencomputing steht noch ganz am Anfang; nicht viele
+                    Menschen wissen davon, was bedeutet, dass nur sehr wenige es nutzen. Die wenigen, die
+                    es nutzen, treffen unglaublich kluge (und profitable) Entscheidungen.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card__item">
+                  <div class="card__row">
+                    <div class="card__avatar">
+                      <picture>
+                        <source srcset="./img/card-2.webp" />
+                        <img src="./img/card-2.png" alt="Avatar" />
+                      </picture>
+                    </div>
+
+                    <div class="card__column">
+                      <p class="card__name">Bill Gates:</p>
+                      <p class="card__text">
+                        Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+                        Menschenfreund
+                      </p>
+
+                      <a href="#" class="card__social">
+                        <svg>
+                          <use xlink:href="./img/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__line"></div>
+
+                  <p class="card__about">
+                    Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben
+                    hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von
+                    seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu
+                    helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,
+                    und ich bin sehr gespannt zu sehen, wohin das führen wird.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card__item">
+                  <div class="card__row">
+                    <div class="card__avatar">
+                      <picture>
+                        <source srcset="./img/card-3.webp" />
+                        <img src="./img/card-3.png" alt="Avatar" />
+                      </picture>
+                    </div>
+
+                    <div class="card__column">
+                      <p class="card__name">Bill Gates:</p>
+                      <p class="card__text">
+                        Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+                        Menschenfreund
+                      </p>
+
+                      <a href="#" class="card__social">
+                        <svg>
+                          <use xlink:href="./img/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__line"></div>
+
+                  <p class="card__about">
+                    Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben
+                    hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von
+                    seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu
+                    helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,
+                    und ich bin sehr gespannt zu sehen, wohin das führen wird.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="card__item">
+                  <div class="card__row">
+                    <div class="card__avatar">
+                      <picture>
+                        <source srcset="./img/card-4.webp" />
+                        <img src="./img/card-4.png" alt="Avatar" />
+                      </picture>
+                    </div>
+
+                    <div class="card__column">
+                      <p class="card__name">Bill Gates:</p>
+                      <p class="card__text">
+                        Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+                        Menschenfreund
+                      </p>
+
+                      <a href="#" class="card__social">
+                        <svg>
+                          <use xlink:href="./img/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__line"></div>
+
+                  <p class="card__about">
+                    Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von seinem eigenen Geld ausgegeben
+                    hat, um dieses Programm zu finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar von
+                    seinem eigenen Geld, um eine bessere Zukunft für alle zu finanzieren und um anderen zu
+                    helfen Gewinne zu machen, die ihm dabei helfen werden! Das ist eine Win-Win-Situation,
+                    und ich bin sehr gespannt zu sehen, wohin das führen wird.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="partners">
+        <div class="container">
+          <div class="partners__content">
+            <h2 class="partners__title">Gli azionisti dell'azienda</h2>
+
+            <div class="partners__column">
+              <div class="partners__row">
+                <a href="#">
+                  <picture>
+                    <source srcset="./img/logo-1_mob.png" media="(max-width: 767px)" />
+                    <source srcset="./img/logo-1.webp" />
+                    <img src="./img/logo-1.png" alt="Avatar" />
+                  </picture>
+
+                </a>
+
+                <a href="#">
+                  <picture>
+                    <source srcset="./img/logo-2_mob.png" media="(max-width: 767px)" />
+                    <source srcset="./img/logo-2.webp" />
+                    <img src="./img/logo-2.png" alt="Avatar" />
+                  </picture>
+                </a>
+
+                <a href="#">
+                  <picture>
+                    <source srcset="./img/logo-3_mob.png" media="(max-width: 767px)" />
+                    <source srcset="./img/logo-3.webp" />
+                    <img src="./img/logo-3.png" alt="Avatar" />
+                  </picture>
+                </a>
+              </div>
+
+              <div class="partners__row partners__row_sub">
+                <a href="#">
+                  <picture>
+                    <source srcset="./img/logo-4_mob.png" media="(max-width: 767px)" />
+                    <source srcset="./img/logo-4.webp" />
+                    <img src="./img/logo-4.png" alt="Avatar" />
+                  </picture>
+                </a>
+
+                <a href="#">
+                  <picture>
+                    <source srcset="./img/logo-5_mob.png" media="(max-width: 767px)" />
+                    <source srcset="./img/logo-5.webp" />
+                    <img src="./img/logo-5.png" alt="Avatar" />
+                  </picture>
+                </a>
+
+                <a href="#">
+                  <picture>
+                    <source srcset="./img/logo-6_mob.png" media="(max-width: 767px)" />
+                    <source srcset="./img/logo-6.webp" />
+                    <img src="./img/logo-6.png" alt="Avatar" />
+                  </picture>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <a href="#">
+              <picture>
+                <source srcset="./img/logo.webp" />
+                <img src="./img/logo.png" alt="logo" />
+              </picture>
+            </a>
+          </div>
+
+          <nav class="footer__menu">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Mappa del sito</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Termini di utilizzo</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Avviso di accessibilità</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Gestione dei Cookie</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Politica sulla protezione dei dati e informativa
+                  sulla privacy</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Avviso di frode Web e phishing</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Politica sui reclami – Australia</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/intlTelInput.min.js"></script>
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- rangeSlider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script type="module" src="js/script.js"></script>
+
+
+</body>
+
+</html>
