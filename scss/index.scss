@@ -1133,6 +1133,7 @@
 
 // swiper
 .swiper {
+
   width: clamp(406px, 65vw, 750px);
 
   @include media-breakpoint-down(sm) {

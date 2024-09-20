@@ -179,8 +179,5 @@ window.intlTelInput(useQuerySelector("#phone"), {
 const swiper = new Swiper(".swiper", {
   loop: true,
   spaceBetween: 20,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: true,
-  },
+
 });
